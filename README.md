@@ -1,44 +1,44 @@
-#Giggle Grid
+# Giggle Grid
 
-##Overview
+## Overview
 
 Giggle Grid is a dynamic Flutter app that offers a rich selection of jokes sorted by categories. It delivers humor at your fingertips with intuitive navigation, quick search, and the ability to save favorites, all powered by the Chuck Norris API.
 
-##Features
+## Features
 
 Categories List: Discover various joke categories.
 Random Joke by Category: Enjoy a random joke from your chosen category.
 Search: Quickly find jokes using keywords.
 Favorites: Save and revisit your favorite jokes.
 
-##Getting Started
+## Getting Started
 
-###Prerequisites
+### Prerequisites
 
 Flutter SDK
 Dart SDK
 An IDE (preferably Android Studio or Visual Studio Code)
-###Installation
+### Installation
 
-###Clone the repository:
+### Clone the repository:
 git clone https://github.com/sagnik150699/giggle_grid
 
-###Navigate to the project directory:
+### Navigate to the project directory:
 cd giggle_grid
 
-###Install dependencies:
+### Install dependencies:
 flutter pub get
 
-###Run the app:
+### Run the app:
 flutter run
 
-##Architecture
+## Architecture
 Giggle Grid uses the Model-View-ViewModel (MVVM) architecture. This architecture separates the UI (View) from the business logic and data (ViewModel), with the Model representing the data and business logic. It enhances code maintainability and testability, and it perfectly suits Flutter's reactive UI model.
 
-##APIs Used
+## APIs Used
 The app utilizes the following endpoints from the Chuck Norris Jokes API:
 
-###Categories Endpoint: Fetches a list of joke categories.
+### Categories Endpoint: Fetches a list of joke categories.
 
 GET https://api.chucknorris.io/jokes/categories
 Random Joke by Category Endpoint: Retrieves a random joke from a specific category.
@@ -48,7 +48,7 @@ Search Endpoint: Searches for jokes containing a specified query.
 
 GET https://api.chucknorris.io/jokes/search?query={query}
 
-##Packages Used
+## Packages Used
 
 flutter_riverpod: ^2.4.6: For state management, providing a reactive way to manage the app's state.
 google_fonts: ^6.1.0: To incorporate a variety of fonts easily.
