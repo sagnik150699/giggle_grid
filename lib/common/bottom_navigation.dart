@@ -7,16 +7,17 @@ var bottomNavigationBuilder = (BuildContext context, state, child) {
   return Scaffold(
     body: child,
     bottomNavigationBar: Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 11.0, vertical: 20.0),
       color: Colors.black,
       child: GNav(
-        gap: 7,
+        gap: 8,
         backgroundColor: Colors.black,
         color: Colors.white,
         activeColor: Colors.white,
-        tabBackgroundColor: Colors.grey.shade700,
+        //tabBackgroundColor: Colors.grey.shade700,
         padding: const EdgeInsets.all(16.0),
-        textStyle: GoogleFonts.orbitron(fontSize: 15.0, color: Colors.white),
+        textStyle: GoogleFonts.orbitron(fontSize: 17.0, color: Colors.white),
+        iconSize: 33.0,
         onTabChange: (index) {
           if (index == 0) {
             context.go('/');

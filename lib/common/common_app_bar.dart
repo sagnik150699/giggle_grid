@@ -8,7 +8,7 @@ AppBar commonAppBar(text) {
     centerTitle: true,
     title: OrbitronFont(
       text: text,
-      fontSize: 35.0,
+      fontSize: 33.0,
       fontWeight: FontWeight.bold,
     ),
   );

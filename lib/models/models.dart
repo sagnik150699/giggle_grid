@@ -1,9 +1,23 @@
-class Category {
+class CategoryModel {
   final String name;
 
-  Category({required this.name});
+  CategoryModel({required this.name});
 
-  factory Category.fromJson(String json) {
-    return Category(name: json);
+  factory CategoryModel.fromJson(String json) {
+    return CategoryModel(name: json);
+  }
+}
+
+class RandomJokeModel {
+  final String id;
+  final String value;
+
+  RandomJokeModel({required this.id, required this.value});
+
+  factory RandomJokeModel.fromJson(Map<String, dynamic> json) {
+    return RandomJokeModel(
+      id: json['id'] as String,
+      value: json['value'] as String,
+    );
   }
 }

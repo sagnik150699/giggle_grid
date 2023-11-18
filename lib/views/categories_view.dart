@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:giggle_grid/common/common_app_bar.dart';
+import 'package:go_router/go_router.dart';
 
 import '../common/custom_text_widgets.dart';
 import '../view_model/categories_view_model.dart';
@@ -23,16 +24,22 @@ class CategoriesView extends ConsumerWidget {
               ),
             )
           : viewModel.errorMessage.isNotEmpty
-              ? Center(child: Text(viewModel.errorMessage))
+              ? OrbitronFont(
+                      text: viewModel.errorMessage,
+                      fontSize: 40.0,
+                      fontColor: Colors.black,
+                    )
               : ListView.builder(
                   itemCount: viewModel.categories.length,
-                  itemBuilder: (context, index) {
+                  itemBuilder: (BuildContext context, index) {
                     final category = viewModel.categories[index];
                     return Padding(
                       padding: const EdgeInsets.only(
                           top: 30.0, left: 25.0, right: 25.0),
                       child: MaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          context.go('/joke/${category.name}');
+                        },
                         elevation: 10.0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10.0)),
