@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:giggle_grid/views/random_jokes_view.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+
 import 'views/categories_view.dart';
 import 'views/favourites_view.dart';
 import 'views/search_view.dart';
@@ -15,7 +16,16 @@ final GoRouter router = GoRouter(
           bottomNavigationBar: const GNav(
             tabs: [
               GButton(
-                icon: Icons.home,
+                icon: Icons.list,
+                text: "Categories",
+              ),
+              GButton(
+                icon: Icons.search_rounded,
+                text: "Search",
+              ),
+              GButton(
+                icon: Icons.favorite,
+                text: "Favourite",
               )
             ],
           ),
@@ -35,10 +45,10 @@ final GoRouter router = GoRouter(
           builder: (context, state) => const FavouritesView(),
         ),
         GoRoute(
-            path: '/joke/:id',
+            path: '/joke/:category',
             builder: (context, state) {
-              final String uniqueId = state.pathParameters['id']!;
-              return  RandomJokesView(uniqueId);
+              final String category = state.pathParameters['category']!;
+              return RandomJokesView(category);
             }),
       ],
     ),
