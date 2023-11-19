@@ -1,5 +1,3 @@
-
-
 class CategoryModel {
   final String name;
 
@@ -29,4 +27,18 @@ class JokeHiveModel {
   late String joke;
 
   JokeHiveModel({required this.id, required this.joke});
+}
+
+class SearchJokeModel {
+  final String id;
+  final String value;
+
+  SearchJokeModel({required this.id, required this.value});
+
+  factory SearchJokeModel.fromJson(Map<String, dynamic> json) {
+    return SearchJokeModel(
+      id: json['id'] as String,
+      value: json['value'] as String,
+    );
+  }
 }

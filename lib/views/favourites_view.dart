@@ -25,16 +25,18 @@ class FavouritesView extends ConsumerWidget {
               itemBuilder: (context, index) {
                 final joke = viewModel.likedJokes[index];
                 return Padding(
-                  padding:   const EdgeInsets.symmetric(vertical: 10.0),
+                  padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: ListTile(
-                    title: OrbitronFont(text: joke['joke'] ?? '', fontSize: 17.0,
-                    fontColor: Colors.black),
+                    title: OrbitronFont(
+                        text: joke['joke'] ?? '',
+                        fontSize: 17.0,
+                        fontColor: Colors.black),
                     trailing: IconButton(
                       icon: Icon(
                         viewModel.isJokeLiked(joke['id'] ?? '')
                             ? Icons.favorite
                             : Icons.favorite_border,
-                      size: 35.0,
+                        size: 35.0,
                       ),
                       onPressed: () {
                         if (viewModel.isJokeLiked(joke['id'] ?? '')) {

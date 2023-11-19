@@ -17,7 +17,7 @@ final GoRouter router = GoRouter(
         ),
         GoRoute(
           path: '/search',
-          builder: (context, state) => const SearchView(),
+          builder: (context, state) => const  SearchView(),
         ),
         GoRoute(
           path: '/favorites',
