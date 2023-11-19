@@ -1,3 +1,5 @@
+
+
 class CategoryModel {
   final String name;
 
@@ -20,4 +22,11 @@ class RandomJokeModel {
       value: json['value'] as String,
     );
   }
+}
+
+class JokeHiveModel {
+  late String id;
+  late String joke;
+
+  JokeHiveModel({required this.id, required this.joke});
 }

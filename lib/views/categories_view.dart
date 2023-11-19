@@ -5,14 +5,14 @@ import 'package:giggle_grid/common/common_app_bar.dart';
 import 'package:go_router/go_router.dart';
 
 import '../common/custom_text_widgets.dart';
-import '../view_model/categories_view_model.dart';
+import '../view_model/categories_random_joke_view_model.dart';
 
 class CategoriesView extends ConsumerWidget {
   const CategoriesView({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final viewModel = ref.watch(categoriesViewModelProvider);
+    final viewModel = ref.watch(categoriesRandomJokeViewModelProvider);
     return Scaffold(
       appBar: commonAppBar("Categories"),
       body: viewModel.isLoading
@@ -25,10 +25,10 @@ class CategoriesView extends ConsumerWidget {
             )
           : viewModel.errorMessage.isNotEmpty
               ? OrbitronFont(
-                      text: viewModel.errorMessage,
-                      fontSize: 40.0,
-                      fontColor: Colors.black,
-                    )
+                  text: viewModel.errorMessage,
+                  fontSize: 40.0,
+                  fontColor: Colors.black,
+                )
               : ListView.builder(
                   itemCount: viewModel.categories.length,
                   itemBuilder: (BuildContext context, index) {
@@ -38,6 +38,8 @@ class CategoriesView extends ConsumerWidget {
                           top: 30.0, left: 25.0, right: 25.0),
                       child: MaterialButton(
                         onPressed: () {
+                          viewModel.selectedCategoryUpdate(category.name);
+                          viewModel.fetchRandomJoke();
                           context.go('/joke/${category.name}');
                         },
                         elevation: 10.0,

@@ -37,7 +37,7 @@ var bottomNavigationBuilder = (BuildContext context, state, child) {
             text: "Search",
           ),
           GButton(
-            icon: Icons.favorite,
+            icon: Icons.favorite_border_rounded,
             text: "Favourite",
           )
         ],
