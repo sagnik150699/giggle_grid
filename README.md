@@ -31,6 +31,59 @@ Giggle Grid is a dynamic and engaging Flutter app that brings a wide variety of 
 
 ### Screenshots
 
+<img src="screenshots/Screenshot_1700410934.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700410951.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700410972.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700410985.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700411021.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700411025.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700411037.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700411066.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700411076.png" alt="Screenshot" style="min-width: 300px;">
+
+
+## Architecture
+Giggle Grid uses the Model-View-ViewModel (MVVM) architecture. This architecture separates the UI (View) from the business logic and data (ViewModel), with the Model representing the data and business logic. It enhances code maintainability and testability, and it perfectly suits Flutter's reactive UI model.
+
+## APIs Used
+The app utilizes the following endpoints from the Chuck Norris Jokes API:
+
+### Categories Endpoint: Fetches a list of joke categories.
+
+GET https://api.chucknorris.io/jokes/categories
+Random Joke by Category Endpoint: Retrieves a random joke from a specific category.
+
+GET https://api.chucknorris.io/jokes/random?category={category}
+Search Endpoint: Searches for jokes containing a specified query.
+
+GET https://api.chucknorris.io/jokes/search?query={query}
+
+## Technical Details
+
+### Packages Used
+
+- `flutter_riverpod: ^2.4.6`: State management solution that simplifies app development.
+- `google_fonts: ^6.1.0`: Access to a wide range of Google Fonts for UI customization.
+- `riverpod: ^2.4.6`: Complements Flutter Riverpod for state management.
+- `flutter_spinkit: ^5.2.0`: Collection of animated loading indicators.
+- `logger: ^2.0.2+1`: Simple yet powerful logging for Flutter.
+- `hive: ^2.2.3`: Lightweight and blazing fast key-value database for local storage.
+- `google_nav_bar: ^5.0.6`: Sleek and customizable navigation bar component.
+- `go_router: ^12.1.1`: Declarative routing solution for Flutter.
+- `dio: ^5.3.3`: Powerful HTTP client for Dart, supporting interceptors, FormData, request cancellation, file downloading, etc.
+- `connectivity_plus: ^5.0.1`: Flutter plugin for discovering the state of network connectivity.
+- `hive_flutter: ^1.1.0`: Extension for Hive, bringing additional Flutter-specific functionality.
+
+### File structure
+
+- giggle_grid/
+    - lib/
+        - models/
+        - views/
+        - view_models/
+        - services/
+        - common/
+      
 
 ## Getting Started
 
@@ -53,44 +106,3 @@ flutter pub get
 ### Run the app:
 flutter run
 
-## Architecture
-Giggle Grid uses the Model-View-ViewModel (MVVM) architecture. This architecture separates the UI (View) from the business logic and data (ViewModel), with the Model representing the data and business logic. It enhances code maintainability and testability, and it perfectly suits Flutter's reactive UI model.
-
-## APIs Used
-The app utilizes the following endpoints from the Chuck Norris Jokes API:
-
-### Categories Endpoint: Fetches a list of joke categories.
-
-GET https://api.chucknorris.io/jokes/categories
-Random Joke by Category Endpoint: Retrieves a random joke from a specific category.
-
-GET https://api.chucknorris.io/jokes/random?category={category}
-Search Endpoint: Searches for jokes containing a specified query.
-
-GET https://api.chucknorris.io/jokes/search?query={query}
-
-## Technical Details
-
-### Packages Used
-- `cupertino_icons: ^1.0.2`: Essential icon pack for Flutter apps.
-- `flutter_riverpod: ^2.4.6`: State management solution that simplifies app development.
-- `google_fonts: ^6.1.0`: Access to a wide range of Google Fonts for UI customization.
-- `riverpod: ^2.4.6`: Complements Flutter Riverpod for state management.
-- `flutter_spinkit: ^5.2.0`: Collection of animated loading indicators.
-- `logger: ^2.0.2+1`: Simple yet powerful logging for Flutter.
-- `hive: ^2.2.3`: Lightweight and blazing fast key-value database for local storage.
-- `google_nav_bar: ^5.0.6`: Sleek and customizable navigation bar component.
-- `go_router: ^12.1.1`: Declarative routing solution for Flutter.
-- `dio: ^5.3.3`: Powerful HTTP client for Dart, supporting interceptors, FormData, request cancellation, file downloading, etc.
-- `connectivity_plus: ^5.0.1`: Flutter plugin for discovering the state of network connectivity.
-- `hive_flutter: ^1.1.0`: Extension for Hive, bringing additional Flutter-specific functionality.
-
-### File structure
-
-giggle_grid/
-├── lib/
-│ ├── models/
-│ ├── views/
-│ ├── view_models/
-│ ├── services/
-│ └── common/
