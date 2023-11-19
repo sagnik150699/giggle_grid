@@ -31,15 +31,15 @@ Giggle Grid is a dynamic and engaging Flutter app that brings a wide variety of 
 
 ### Screenshots
 
-<img src="screenshots/Screenshot_1700410934.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700410951.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700410972.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700410985.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700411021.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700411025.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700411037.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700411066.png" alt="Screenshot" style="min-width: 300px;">
-<img src="screenshots/Screenshot_1700411076.png" alt="Screenshot" style="min-width: 300px;">
+<img src="screenshots/Screenshot_1700410934.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700410951.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700410972.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700410985.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700411021.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700411025.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700411037.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700411066.png" alt="Screenshot" style="max-width: 300px;">
+<img src="screenshots/Screenshot_1700411076.png" alt="Screenshot" style="max-width: 300px;">
 
 
 ## Architecture
