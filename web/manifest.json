@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Giggle Grid is a dynamic Flutter app offering a rich selection of jokes sorted by categories. With intuitive navigation, quick search, and the ability to save favorites, Giggle Grid delivers humor at your fingertips, powered by the Chuck Norris API.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
