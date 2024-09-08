@@ -47,7 +47,7 @@ jobs:
           path: build/windows/runner/Release/
 
       - name: Build APK
-        run: flutter build apk --release
+        run: ${{ github.workspace }}\_flutter\bin\flutter.bat build apk --release
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v2
@@ -56,7 +56,7 @@ jobs:
           path: build/app/outputs/flutter-apk/app-release.apk
 
       - name: Build Web
-        run: flutter build web --release
+        run: ${{ github.workspace }}\_flutter\bin\flutter.bat build web --release
 
       - name: Upload Web Artifact
         uses: actions/upload-artifact@v2
@@ -74,6 +74,6 @@ jobs:
           java-version: "17.x"
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '3.16.5'
+          flutter-version: '3.24.2'
       - run : flutter pub get
       - run: flutter build ios --no-codesign
