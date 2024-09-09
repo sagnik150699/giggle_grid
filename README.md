@@ -1,5 +1,8 @@
 # Giggle Grid: Flutter Joke App
 
+### Author: Sagnik Bhattacharya
+[LinkedIn: www.linkedin.com/in/sagnik-bhattacharya-916b9463/](https://www.linkedin.com/in/sagnik-bhattacharya-916b9463/)
+
 ## Introduction
 Giggle Grid is a dynamic and engaging Flutter app that brings a wide variety of jokes right to your fingertips. Powered by the Chuck Norris API, the app features an intuitive and sleek user interface, offering a seamless and enjoyable joke-browsing experience. Whether you're in the mood for a quick chuckle or a deep dive into humor, Giggle Grid has something for everyone.
 
