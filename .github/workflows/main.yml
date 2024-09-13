@@ -40,7 +40,7 @@ jobs:
 
       # Step 7: Upload Windows Artifact
       - name: Upload Windows Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: windows-app
           path: build/windows/runner/Release/
