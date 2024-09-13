@@ -38,12 +38,12 @@ jobs:
       - name: Build Windows Executable
         run: ${{ github.workspace }}\_flutter\bin\flutter.bat build windows
 
-      # Step 7: Upload Windows Artifact
-      - name: Upload Windows Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: windows-app
-          path: build/windows/runner/Release/
+#      # Step 7: Upload Windows Artifact
+#      - name: Upload Windows Artifact
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: windows-app
+#          path: build/windows/runner/Release/
 
       # Step 8: Build Android APK
       - name: Build Android APK
