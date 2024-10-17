@@ -51,7 +51,7 @@ jobs:
 
       # Step 9: Upload APK Artifact
       - name: Upload APK Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: android-app
           path: build/app/outputs/flutter-apk/app-release.apk
@@ -62,7 +62,7 @@ jobs:
 
       # Step 11: Upload Web Artifact
       - name: Upload Web Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: web-app
           path: build/web/
