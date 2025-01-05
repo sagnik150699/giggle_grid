@@ -1,7 +1,7 @@
 import 'package:giggle_grid/views/random_jokes_view.dart';
 import 'package:go_router/go_router.dart';
 
-import 'common/bottom_navigation.dart';
+import 'common_widgets/bottom_navigation.dart';
 import 'views/categories_view.dart';
 import 'views/favourites_view.dart';
 import 'views/search_view.dart';
@@ -17,7 +17,7 @@ final GoRouter router = GoRouter(
         ),
         GoRoute(
           path: '/search',
-          builder: (context, state) => const  SearchView(),
+          builder: (context, state) => const SearchView(),
         ),
         GoRoute(
           path: '/favorites',

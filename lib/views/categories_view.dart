@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:giggle_grid/common/common_app_bar.dart';
+import 'package:giggle_grid/common_widgets/common_app_bar.dart';
 import 'package:go_router/go_router.dart';
 
-import '../common/custom_text_widgets.dart';
+import '../common_widgets/custom_text_widgets.dart';
 import '../view_model/categories_random_joke_view_model.dart';
 
 class CategoriesView extends ConsumerWidget {

@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:giggle_grid/services/api_services.dart';
 import 'package:giggle_grid/services/jokes_local_storage_services.dart';
 
-import '../common/logger.dart';
+import '../common_widgets/logger.dart';
 import '../models/models.dart';
 
 final categoriesRandomJokeViewModelProvider =

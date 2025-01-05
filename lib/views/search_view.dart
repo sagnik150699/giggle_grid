@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:giggle_grid/common/logger.dart';
+import 'package:giggle_grid/common_widgets/logger.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../common/custom_text_widgets.dart';
+import '../common_widgets/custom_text_widgets.dart';
 import '../view_model/search_view_model.dart';
 
 class SearchView extends ConsumerWidget {
@@ -71,12 +71,16 @@ class SearchView extends ConsumerWidget {
                     return Padding(
                       padding: const EdgeInsets.symmetric(vertical: 10.0),
                       child: ListTile(
-                        title: OrbitronFont(text: joke.value,fontSize: 17.0,
-                        fontColor: Colors.black,),
+                        title: OrbitronFont(
+                          text: joke.value,
+                          fontSize: 17.0,
+                          fontColor: Colors.black,
+                        ),
                         trailing: IconButton(
                           icon: Icon(
-                              isLiked ? Icons.favorite : Icons.favorite_border,
-                            size: 35.0,),
+                            isLiked ? Icons.favorite : Icons.favorite_border,
+                            size: 35.0,
+                          ),
                           onPressed: () =>
                               searchViewModel.toggleJokeLikeStatus(joke),
                         ),
