@@ -5,7 +5,7 @@ import 'package:giggle_grid/common_widgets/logger.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../common_widgets/custom_text_widgets.dart';
-import '../view_model/search_view_model.dart';
+import '../providers/providers.dart';
 
 class SearchView extends ConsumerWidget {
   const SearchView({super.key});

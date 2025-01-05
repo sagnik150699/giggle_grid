@@ -1,15 +1,11 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:giggle_grid/services/api_services.dart';
 import 'package:giggle_grid/services/jokes_local_storage_services.dart';
 
 import '../common_widgets/logger.dart';
-import '../models/models.dart';
-
-final categoriesRandomJokeViewModelProvider =
-    ChangeNotifierProvider.autoDispose<CategoriesRandomJokeViewModel>(
-        (ref) => CategoriesRandomJokeViewModel());
+import '../models/joke_category_model.dart';
+import '../models/random_joke_model.dart';
 
 class CategoriesRandomJokeViewModel extends ChangeNotifier {
   List<CategoryModel> categories = [];

@@ -1,14 +1,9 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/models.dart';
+
+import '../models/search_joke_model.dart';
 import '../services/api_services.dart';
 import '../services/jokes_local_storage_services.dart';
-
-final searchViewModelProvider =
-    ChangeNotifierProvider.autoDispose<SearchViewModel>(
-  (ref) => SearchViewModel(),
-);
 
 class SearchViewModel extends ChangeNotifier {
   final ApiService _apiService = ApiService();
@@ -26,7 +21,7 @@ class SearchViewModel extends ChangeNotifier {
       isLoading = false;
       notifyListeners();
       return;
-    } else if (query=="") {
+    } else if (query == "") {
       errorMessage = 'Please Type';
       isLoading = false;
       notifyListeners();

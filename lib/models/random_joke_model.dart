@@ -1,0 +1,13 @@
+class RandomJokeModel {
+  final String id;
+  final String value;
+
+  RandomJokeModel({required this.id, required this.value});
+
+  factory RandomJokeModel.fromJson(Map<String, dynamic> json) {
+    return RandomJokeModel(
+      id: json['id'] as String,
+      value: json['value'] as String,
+    );
+  }
+}

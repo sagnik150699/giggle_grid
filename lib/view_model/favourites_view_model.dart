@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../services/jokes_local_storage_services.dart';
-
-final favoritesViewModelProvider =
-    ChangeNotifierProvider.autoDispose<FavoritesViewModel>(
-        (ref) => FavoritesViewModel());
 
 class FavoritesViewModel extends ChangeNotifier {
   final JokesDatabase _jokesDb = JokesDatabase();

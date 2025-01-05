@@ -5,7 +5,7 @@ import 'package:giggle_grid/common_widgets/common_app_bar.dart';
 import 'package:go_router/go_router.dart';
 
 import '../common_widgets/custom_text_widgets.dart';
-import '../view_model/categories_random_joke_view_model.dart';
+import '../providers/providers.dart';
 
 class CategoriesView extends ConsumerWidget {
   const CategoriesView({super.key});
