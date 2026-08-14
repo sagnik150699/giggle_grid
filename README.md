@@ -5,6 +5,12 @@ Website: [sagnikbhattacharya.com](https://sagnikbhattacharya.com)
 
 # Giggle Grid: Flutter Joke App
 
+## Course
+
+This project is part of **The Complete Flutter Course: Build Android, iOS, and Web apps**.
+
+[View the course on Coding Liquids](https://www.codingliquids.com/courses/Flutter-Course-Learn-to-Build-Android-iOS-and-Web-apps-637b978ee4b08f9aaa22d2cb)
+
 ### Author: Sagnik Bhattacharya
 [LinkedIn: www.linkedin.com/in/sagnik-bhattacharya-916b9463/](https://www.linkedin.com/in/sagnik-bhattacharya-916b9463/)
 
